@@ -19,13 +19,58 @@
         <!-- Slider js file -->
         <script src="/library/js/script.js"></script>
         <script src="/library/js/slider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var Home = new home({
+                    "name" : "Abhishek",
+                    "sliderClass" : ".full-width-slider"
+                });
+                console.log(Home.getName())
+
+                var Slider = new slider({
+                    "sectionId" : "#slider",
+                    "sliderClass" : ".full-width-slider",
+                    "activeClass" : ".active",
+                    "preLink" : ".pre-link",
+                    "nextLink" : ".next-link",
+                    "autoplayId" : "#checkbox"
+                });
+
+            });
+        </script>
     </head>
 
     <body>
         <div class="container">
             <div class="row">
-                <h1>This is a Heading</h1>
-                <p>This is a paragraph.</p>
+                <h1>Carousel By Abhishek Chaturvedi</h1>
+            </div>
+            <div class="row">
+                <div class="checkbox">
+                    <label><input type="checkbox" id="checkbox">Autoplay</label>
+                </div>
+            </div>
+            <div class="row">
+                <div id="slider">
+                    <ul class="full-width-slider">
+                        <li class="active">
+                            <img src="/library/images/slider-image-1.jpg" alt="Image-1" title="Image-1"/>
+                        </li>
+                        <li>
+                            <img src="/library/images/slider-image-2.jpg" alt="Image-2" title="Image-2"/>
+                        </li>
+                        <li>
+                            <img src="/library/images/slider-image-3.jpg" alt="Image-1" title="Image-3"/>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="pre-link">
+                        <img src="/library/images/pre.png" alt="Previous" title="Previous"/>
+                    </a>
+                    <a href="javascript:;" class="next-link">
+                        <img src="/library/images/next.png" alt="Next" title="Next"/>
+                    </a>
+                </div>
             </div>
         </div>
     </body>

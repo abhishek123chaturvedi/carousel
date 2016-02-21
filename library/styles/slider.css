@@ -1,0 +1,35 @@
+#slider {
+    overflow : hidden;
+    position: relative;
+}
+.full-width-slider {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.full-width-slider li {
+    margin: 0;
+    width : 1170px;
+    float: left;
+    list-style: none;
+}
+.full-width-slider li img{
+    width : 100%;
+}
+#slider .pre-link {
+    position: absolute;
+    left: 0;
+    top : 50%;
+    opacity: 0.6;
+}
+#slider .next-link {
+    position: absolute;
+    right: 0;
+    top : 50%;
+    opacity: 0.6;
+}
+
+#slider .next-link:hover, #slider .pre-link:hover {
+    opacity: 1;
+}
